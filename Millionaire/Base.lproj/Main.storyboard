@@ -26,7 +26,7 @@
                                     <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HkE-Ap-65b" kind="show" id="Jbi-7l-KIK"/>
+                                    <segue destination="LQU-VN-6Y9" kind="show" id="0XU-j8-8ul"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-Uv-uYu">
@@ -40,20 +40,20 @@
                                     <segue destination="KHT-gA-8j9" kind="show" id="FPU-Iu-Hjx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кто хочет стать миллионером" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-jX-MED">
-                                <rect key="frame" x="11" y="170" width="353" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dZj-Mf-wVP">
+                                <rect key="frame" x="92" y="72" width="191" height="134.5"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="vdc-Uv-uYu" firstAttribute="top" secondItem="Lwe-5i-5HW" secondAttribute="bottom" constant="23.5" id="1Qm-nD-z59"/>
+                            <constraint firstItem="dZj-Mf-wVP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FJ5-e8-Hkr"/>
+                            <constraint firstItem="dZj-Mf-wVP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="KXw-7j-4oU"/>
                             <constraint firstItem="vdc-Uv-uYu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MY1-Ml-brv"/>
                             <constraint firstItem="Lwe-5i-5HW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="S1y-dl-PjW"/>
-                            <constraint firstItem="GwS-jX-MED" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TXP-bt-997"/>
-                            <constraint firstItem="GwS-jX-MED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="dC3-qH-tfU"/>
+                            <constraint firstItem="dZj-Mf-wVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="Xen-03-T5F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dZj-Mf-wVP" secondAttribute="trailing" constant="92" id="oZM-yt-qoQ"/>
                             <constraint firstItem="Lwe-5i-5HW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sQg-vu-Un0"/>
                         </constraints>
                     </view>
@@ -107,6 +107,33 @@
             </objects>
             <point key="canvasLocation" x="2136.8000000000002" y="392.65367316341832"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="nYz-fc-ek2">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="LQU-VN-6Y9" customClass="ViewController" customModule="Millionaire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="83q-sL-bkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QT6-xu-hoW">
+                                <rect key="frame" x="92" y="72" width="191" height="134.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DAI-11-FM1"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="QT6-xu-hoW" firstAttribute="centerX" secondItem="DAI-11-FM1" secondAttribute="centerX" id="F7p-15-r2l"/>
+                            <constraint firstItem="QT6-xu-hoW" firstAttribute="leading" secondItem="DAI-11-FM1" secondAttribute="leading" constant="92" id="Wlf-Oj-na4"/>
+                            <constraint firstItem="DAI-11-FM1" firstAttribute="trailing" secondItem="QT6-xu-hoW" secondAttribute="trailing" constant="92" id="t4X-M5-cJ9"/>
+                            <constraint firstItem="QT6-xu-hoW" firstAttribute="top" secondItem="DAI-11-FM1" secondAttribute="top" constant="72" id="tjL-4t-MN1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="50G-L7-MKE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8D-6b-PQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="-320"/>
+        </scene>
         <!--Quiz-->
         <scene sceneID="2OL-L4-Riy">
             <objects>
@@ -146,7 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpS-ZT-LHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="-307"/>
+            <point key="canvasLocation" x="2137" y="-320"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oJL-uF-ACs">
@@ -170,6 +197,7 @@
     </scenes>
     <resources>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="logo" width="135" height="134.5"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,9 +210,6 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
